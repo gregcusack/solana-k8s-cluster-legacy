@@ -14,7 +14,7 @@ sudo docker build -t solana-validator:latest -f validator/Dockerfile .
 ```
 
 Run bootstrap:
-````
+```
 docker run -it -d --name bootstrap --network=solana-cluster --ip=192.168.0.101 solana-bootstrap-validator:latest
 ```
 
