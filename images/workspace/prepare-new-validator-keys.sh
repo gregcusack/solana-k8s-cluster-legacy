@@ -16,7 +16,3 @@ solana -u http://$BOOTSTRAP_RPC_PORT airdrop 500 id.json
 solana -u http://$BOOTSTRAP_RPC_PORT create-vote-account --allow-unsafe-authorized-withdrawer vote.json id.json id.json -k id.json
 solana -u http://$BOOTSTRAP_RPC_PORT create-stake-account stake.json 1.00228288 -k id.json
 solana -u http://$BOOTSTRAP_RPC_PORT delegate-stake stake.json vote.json --force -k id.json
-#solana -u http://192.168.0.101:8899 airdrop 500 id.json
-#solana -u http://192.168.0.101:8899 create-vote-account --allow-unsafe-authorized-withdrawer vote.json id.json id.json -k id.json
-#solana -u http://192.168.0.101:8899 create-stake-account stake.json 1.00228288 -k id.json
-#solana -u http://192.168.0.101:8899 delegate-stake stake.json vote.json --force -k id.json
