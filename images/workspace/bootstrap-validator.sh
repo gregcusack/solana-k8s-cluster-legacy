@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+ 
+echo "my pod ip: $MY_POD_IP" > /workspace/logs/test.log
 
 nohup solana-validator \
   --no-os-network-limits-test \
@@ -8,7 +10,7 @@ nohup solana-validator \
   --vote-account vote.json \
   --ledger ledger \
   --log logs/solana-validator.log \
-  --gossip-host 192.168.0.101 \
+  --gossip-host $MY_POD_IP \
   --gossip-port 8001 \
   --rpc-port 8899 \
   --rpc-faucet-address 127.0.0.1:9900 \

@@ -39,5 +39,10 @@ spec:
       containers:
       - name: solana-bootstrap-validator
         image: gregcusack/solana-bootstrap-validator:latest
+        env:
+          - name: MY_POD_IP
+            valueFrom:
+              fieldRef:
+                fieldPath: status.podIP
         command: ["/workspace/start-bootstrap-validator.sh"]
       restartPolicy: Always
