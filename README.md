@@ -33,9 +33,9 @@ solana -ul gossip
 
 
 ## TODO
-[ ] Make number of validators to deploy configurable
-[ ] Configure to be able to set any type of flags needed (see net.sh scripts for gce)
-[ ] Configurable namespace -> define your own namespace and deploy into it
+- [ ] Make number of validators to deploy configurable
+- [ ] Configure to be able to set any type of flags needed (see net.sh scripts for gce)
+- [x] Configurable namespace -> define your own namespace and deploy into it
 
 ### docker containers for solana validators
 Builds off of: https://github.com/yihau/solana-local-cluster
