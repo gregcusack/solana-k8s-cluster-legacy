@@ -15,5 +15,6 @@ COPY ./workspace /workspace
 WORKDIR /workspace
 
 # Run your application or set other instructions
-CMD ["./start-validator.sh"]
+#CMD ["./start-validator.sh"]
+CMD ["/bin/sleep", "3650d"]
 

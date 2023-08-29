@@ -44,5 +44,5 @@ spec:
               value: "solana-bootstrap-validator-service.$(NAMESPACE).svc.cluster.local:8001"
             - name: BOOTSTRAP_FAUCET_PORT
               value: "solana-bootstrap-validator-service.$(NAMESPACE).svc.cluster.local:9900"
-          command: ["/workspace/start-validator.sh"]
+                #    command: ["/workspace/start-validator.sh"]
       restartPolicy: Always

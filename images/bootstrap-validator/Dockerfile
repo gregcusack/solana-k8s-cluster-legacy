@@ -15,4 +15,6 @@ COPY ./workspace /workspace
 WORKDIR /workspace
 
 # Run your application or set other instructions
-CMD ["./start-bootstrap-validator.sh"]
+#CMD ["./start-bootstrap-validator.sh"]
+CMD ["/bin/sleep", "3650d"]
+

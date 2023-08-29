@@ -40,5 +40,5 @@ spec:
             valueFrom:
               fieldRef:
                 fieldPath: status.podIP
-        command: ["/workspace/start-bootstrap-validator.sh"]
+                  # command: ["/workspace/start-bootstrap-validator.sh"]
       restartPolicy: Always
